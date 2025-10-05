@@ -1,0 +1,265 @@
+
+body {
+  background:lightblue;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  animation: latidos 2.0s ease-in-out infinite;
+}
+
+@keyframes latidos {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+#titulo {
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.card {
+  padding: 2px;
+}
+
+#app {
+  max-width: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+.app-container {
+  max-width: 900px;
+  margin: 40px auto;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+}
+
+.input-area {
+  margin-bottom: 40px;
+}
+
+input {
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  width: 70%;
+  border:2px unset black;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  margin-right: 20px;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.8);
+}
+
+button {
+  padding: 10px 25px;
+  background-color: white;
+  border: 3px solid black;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  color: black;
+  transform: scale(1.1);
+}
+
+
+.task-sections {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; 
+  margin-top: 40px;
+}
+
+.section {
+  background-color: rgba(0,0,0,0.1);
+  border:3px dotted black;
+  backdrop-filter: blur(20px);
+  min-width: 220px; 
+  max-width: 300px; 
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+
+.section h2 {
+  font-family:'Times New Roman', Times, serif;
+  border-left: black solid 5px;
+  border-right: black solid 5px;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
+
+.section ul li {
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  word-wrap: break-word; 
+  text-align: center;
+
+}
+
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blue;
+  border: 3px inset black;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.done li {
+  text-decoration: line-through;
+  background-color: green;
+}
+
+.doing li {
+  background-color: orange;
+}
+
+.todo li {
+  background-color: red;
+}
+.buttons button {
+  font-size: 20px;
+  background-color: white;
+  border: 3px solid black;
+  box-shadow: none;
+  margin-top: 8px;
+  margin-left: 8px;
+
+}
+
+.move button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 0px;
+}
+
+.move {
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+}
+
+
+.locked {
+  font-weight: bold;
+}
+
+
+
+.empty-message {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+
+
+
+
+
+
+footer {
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px; /* ajusta según la altura del SVG */
+  overflow: hidden;
+}
+
+.custom-shape-divider-bottom-1759688838 {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1759688838 svg {
+  width: calc(100% + 1.3px);
+  height: 101px;
+}
+
+.custom-shape-divider-bottom-1759688838 .shape-fill {
+  fill: #FFFFFF;
+}
